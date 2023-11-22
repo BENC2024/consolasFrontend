@@ -1,0 +1,16 @@
+
+<form> <!--action en form sirve para redireccionar los datos del formulario a una pagina-->
+   <label for="Nombre">Nombre de la consola: </label>
+      <input type="text" name="Fabricante" id="Nombre" placeholder="Consola" [(ngModel)]="consola.nombre">
+   <label for="Fabricante">Fabricante: </label>
+      <input type="text" name="Fabricante" id="Fabricante" placeholder="Fabricante" [(ngModel)]="consola.fabricante">
+   <label for="Lanzamiento">Fecha de lanzamiento: </label>
+      <input type="text" name="Lanzamiento" id="Lanzamiento" placeholder="lanzamiento" [(ngModel)]="consola.lanzamiento">
+   <label for="Almacenamiento">Almacenamiento: </label>
+      <input type="text" name="Almacenamiento" id="Almacenamiento" placeholder="Almacenamiento" [(ngModel)]="consola.almacenamiento">
+   <label for="Precio">Precio: </label>
+      <input type="number" name="Precio" id="Precio" placeholder="$$$" [(ngModel)]="consola.precio">
+   <label for="Enlace">Enlace de imagen: </label>
+      <input type="url" name="Enlace" id="Enlace" placeholder="url" [(ngModel)]="consola.enlace">
+   <button type="button" (click)="guardarConsola()">Guardar datos</button>
+</form>

@@ -1,0 +1,28 @@
+<div class="container d-flex justify-content-center">
+   <table class="table table-bordered text-center">
+      <thead>
+         <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Fabricante</th>
+            <th>Lanzamiento</th>
+            <th>Almacenamiento</th>
+            <th>Precio</th>
+            <!--<th>Juegos Destacados</th>-->
+            <th>Imagen</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let consola of listaConsolas; let i = index">
+            <th>{{i}}</th>
+            <td>{{consola.nombre}}</td>
+            <td>{{consola.fabricante}}</td>
+            <td>{{consola.lanzamiento}}</td>
+            <td>{{consola.almacenamiento}}</td>
+            <td>{{consola.precio}}</td>
+            <!--<td>{{consola.juegosDestacados_id}}</td>-->
+            <td><img src="{{consola.enlaceImagen}}" alt="consola"></td>
+         </tr>
+      </tbody>
+   </table>
+</div>
