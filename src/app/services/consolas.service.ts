@@ -8,8 +8,9 @@ import { Consolas } from '../interfaces/consolas';
 })
 export class ConsolasService {
 
-   //Private httpClient = Inject(HttpClient)
-   baseURL1 = "https://benc2024.github.io/ConsolaGames/consolas.json"
+   //Private httpClient = Inject(Httpclient)
+   //baseURL1 = "https://benc2024.github.io/ConsolaGames/consolas.json"
+   baseURL1 = "http://localhost:3000/listConsolas" //http://localhost:3000/listConsolas
 
    constructor(private httpClient: HttpClient) { }
 
