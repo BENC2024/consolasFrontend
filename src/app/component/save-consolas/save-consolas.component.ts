@@ -16,7 +16,7 @@ export class SaveConsolasComponent {
       lanzamiento:"",
       almacenamiento:"",
       precio:0,
-      enlace:""
+      enlaceImagen:""
    }
 
    constructor(private consolaService: ConsolasService){}

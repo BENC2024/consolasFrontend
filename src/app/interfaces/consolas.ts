@@ -4,5 +4,5 @@ export interface Consolas {
    lanzamiento: String
    almacenamiento: String
    precio: Number
-   enlace:String 
+   enlaceImagen:String 
 }
