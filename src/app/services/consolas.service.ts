@@ -11,6 +11,7 @@ export class ConsolasService {
    //Private httpClient = Inject(Httpclient)
    //baseURL1 = "https://benc2024.github.io/ConsolaGames/consolas.json"
    baseURL1 = "http://localhost:3000/listConsolas" //http://localhost:3000/listConsolas
+   baseURL2 = "http://localhost:3000/saveConsola"
 
    constructor(private httpClient: HttpClient) { }
 
@@ -20,7 +21,7 @@ export class ConsolasService {
    }
 
    guardarConsola(consola: Consolas):Observable<any>{
-      return this.httpClient.post(this.baseURL1,consola).pipe(
+      return this.httpClient.post(this.baseURL2,consola).pipe(
          catchError(
             e => {
                console.log(e)

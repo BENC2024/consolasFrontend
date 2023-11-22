@@ -22,7 +22,14 @@ export class SaveConsolasComponent {
    constructor(private consolaService: ConsolasService){}
 
    guardarConsola(){
-      this.consolaService.guardarConsola(this.consola)
+      this.consolaService.guardarConsola(this.consola).subscribe(data => {
+         if (data) {
+            alert("Creado exitosamente")
+         }
+         else { 
+            alert("No creado")
+         }
+      });
    }
 
 }
